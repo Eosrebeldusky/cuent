@@ -1,0 +1,26 @@
+
+<h1> Registro </h1>
+
+<form [formGroup] ='myForm' (ngSubmit)='ingresar()' class='registro'> 
+<mat-form-field>
+    <mat-label>Nombre</mat-label>
+    <input matInput type='text' formControlname='nombre'>
+</mat-form-field>
+
+<mat-form-field>
+    <mat-label>Apellido</mat-label>
+    <input matInput type='text' formControlname='apellido'>
+</mat-form-field>
+
+<mat-form-field>
+    <mat-label>Mail</mat-label>
+    <input matInput type='email' formControlname='mail'>
+</mat-form-field>
+
+<mat-form-field>
+    <mat-label>Password</mat-label>
+    <input matInput type='password' formControlname='password'>
+</mat-form-field>
+   
+    <button type="submit">Ingresar</button>
+</form>
